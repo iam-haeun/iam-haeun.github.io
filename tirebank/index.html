@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>타이어뱅크 이벤트페이지</title>
+    <link rel="stylesheet" type="text/css" href="css/event.css" />
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="inner">
+            <div class="tit-wrap">
+                <p class="tit">타이어<br>전문 서비스는,<strong>타이어 뱅크</strong></p>
+                <p class="desc">
+                    <img src="images/qrcode.svg" alt="QR 이미지" />
+                    Google Play, Apple appstore,원스토어에서<br> 
+                    "타이어 뱅크" 앱을 검색 하세요.
+                </p>
+            </div>
+            <div class="panel">
+                <div class="cont-wrap event-wrap">
+                    <div class="cont-head">
+                        <img src="images/event_title01.png" alt="출산장려캠페인 할인 쿠폰 이벤트 확인해보세용" />
+                    </div>
+                    <div class="cont-body">
+                        <ul class="form-list">
+                            <li>
+                                <div class="input-wrap">
+                                    <input type="tel" class="form-input clear-input" placeholder="010 0000 0000" title="핸드폰번호" />
+                                    <button class="clear-btn">내용 삭제</button>
+                                </div>
+                                <p>숫자만 입력해 주세요</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont-foot">
+                        <button type="button" class="btn" title="로그인하기">로그인</button>
+                    </div>
+                </div>
+
+                <div class="cont-wrap event-wrap">
+                    <div class="cont-head">
+                        <img src="images/event_title01.png" alt="출산장려캠페인 할인 쿠폰 이벤트 확인해보세용" />
+                    </div>
+                    <div class="cont-body">
+                        <ul class="form-list">
+                            <li>
+                                <div class="input-wrap">
+                                    <input type="tel" class="form-input clear-input" value="010 1234 1234" placeholder="010 0000 0000" title="핸드폰번호" />
+                                    <button class="clear-btn">내용 삭제</button>
+                                </div>
+                                <p>입력하신 위 번호로 인증번호를 전송하였습니다.</p>
+                            </li>
+                            <li>
+                                <div class="input-wrap">
+                                    <input type="number" class="form-input clear-input" placeholder="인증번호 입력" title="인증번호" required />
+                                    <button class="clear-btn">내용 삭제</button>
+                                </div>
+                                <div class="txt-wrap">
+                                    <span class="tc-gray">남은 시간 2:03</span>
+                                    <button type="button" class="tc-red td-line">인증번호 재전송</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont-foot">
+                        <button type="button" class="btn" title="로그인하기">로그인</button>
+                    </div>
+                </div>
+
+                <div class="cont-wrap event-wrap">
+                    <div class="cont-head">
+                        <img src="images/event_title02.png" alt="출산장려캠페인 할인 쿠폰 이벤트 신청이 완료됐어용" />
+                    </div>
+                    <div class="cont-body">
+                        <div class="detail-list">
+                            <div class="title">홍길동님의 신청 내역<a href="" class="btn-logout">로그아웃</a></div>
+                            <ul>
+                                <li>
+                                    <p>040110 - 3******</p>
+                                    <a href="" class="tc-pink td-line">수정</a>
+                                </li>
+                                <li>
+                                    <p>040110 - 3******</p>
+                                    <a href="" class="tc-pink td-line">수정</a>
+                                </li>
+                                <li>
+                                    <p>040110 - 3******</p>
+                                    <a href="" class="">대기</a>
+                                </li>
+                                <li>
+                                    <p>040110 - 3******</p>
+                                    <a href="" class="tc-green">발급</a>
+                                </li>
+                                <li>
+                                    <p>040110 - 3******</p>
+                                    <a href="" class="tc-green">발급</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cont-foot">
+                        <button type="button" class="btn green" title="추가 등록하기">추가 등록</button>
+                        <!-- 신청 내역 5개 이상 ui -->
+                        <!-- <button type="button" class="btn" disabled>추가 등록</button> -->
+                    </div>
+                </div>
+
+                <div class="cont-wrap form-wrap">
+                    <div class="cont-body">
+                        <div class="form-group">
+                            <h1 class="tit">고객 정보 입력</h1>
+                            <ul class="form-list">
+                                <li>
+                                    <strong>신생아 주민등록번호 <span class="tc-red">*</span></strong>
+                                    <div class="input-group">
+                                        <input type="number" class="form-input" value="040109" title="신생아 주민등록번호 앞 자리" />
+                                        <em>-</em>
+                                        <input type="number" class="form-input" value="3333333" title="신생아 주민등록번호 뒷 자리" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>고객 연락처 <span class="tc-red">*</span></strong>
+                                    <input type="tel" class="form-input" value="010 0000 0000" title="고객 연락처" disabled />
+                                </li>
+                                <li>
+                                    <strong>차량번호 <span class="tc-red">*</span></strong>
+                                    <div class="input-wrap">
+                                        <input type="text" class="form-input clear-input" value="10모 1234" title="차량번호" />
+                                        <button class="clear-btn">내용 삭제</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>고객명(차량등록증 명의자) <span class="tc-red">*</span></strong>
+                                    <div class="input-wrap">
+                                        <input type="text" class="form-input clear-input" value="홍길동" title="고객명(차량등록증 명의자)" />
+                                        <button class="clear-btn">내용 삭제</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <h1 class="tit">할인 쿠폰 선택</h1>
+                            <ul class="coupon-box">
+                                <li>
+                                    <input type="radio" name="coupon" id="disc50" checked />
+                                    <label for="disc50">
+                                        <div class="img-wrap">50% 할인권</div>
+                                        <span>자녀 1~3명</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="coupon" id="disc100" />
+                                    <label for="disc100">
+                                        <div class="img-wrap">100% 교환권</div>
+                                        <span>자녀 4명 이상</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="text-right">※ 100% 상품권 제세공과금 22%로 부과<br>(제세공과금 가상계좌 입금만 가능하며 카드, 현금 불가)</p>
+                        </div>
+                        <div class="form-group receipt-group" style="display:none;">
+                            <h1 class="tit">원천징수영수증 신청 여부</h1>
+                            <ul class="custom-radio">
+                                <li>
+                                    <input type="radio" name="receiptApply" id="receiptY" />
+                                    <label for="receiptY">신청</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="receiptApply" id="receiptN" checked />
+                                    <label for="receiptN">신청 안함</label>
+                                </li>
+                            </ul>
+                            <p class="text-center">※ 제세공과금 원천징수 내역은 홈텍스에서도 확인 가능</p>
+                        </div>
+                        <div class="form-group receipt-group" style="display:none;">
+                            <h1 class="tit">원천징수영수증 발급 방법</h1>
+                            <ul class="custom-radio">
+                                <li>
+                                    <input type="radio" name="receiptWay" id="email" checked />
+                                    <label for="email">이메일</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="receiptWay" id="post" />
+                                    <label for="post">우편</label>
+                                </li>
+                            </ul>
+                            <ul class="form-list">
+                                <li class="email-item">
+                                    <strong>이메일 <span class="tc-red">*</span></strong>
+                                    <div class="input-wrap">
+                                        <input type="text" class="form-input clear-input" placeholder="이메일 주소" title="이메일" />
+                                        <button class="clear-btn">내용 삭제</button>
+                                    </div>
+                                </li>
+                                <li class="addr-item" style="display:none;">
+                                    <strong>주소 <span class="tc-red">*</span></strong>
+                                    <div class="addr">
+                                        <input type="text" class="form-input search-input" placeholder="예) 판교역로 235" title="우편번호 검색" />
+                                        <div class="input-wrap">
+                                            <input type="text" class="form-input clear-input" placeholder="상세주소 입력" title="상세주소" />
+                                            <button class="clear-btn">내용 삭제</button>
+                                        </div>
+                                        <span class="postal-code">31356</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <h1 class="tit">증빙서류 등록</h1>
+                            <ul class="form-list-type02 document-list01">
+                                <li>
+                                    <strong>· 차량등록증</strong>
+                                    <label class="file-upload">
+                                        <input type="file" accept="image/*" title="첨부파일 등록" />
+                                        <img src="" class="preview" alt="" style="display:none;" />
+                                    </label>
+                                </li>
+                                <li>
+                                    <strong>· 가족관계증명서</strong>
+                                    <label class="file-upload">
+                                        <input type="file" accept="image/*" title="첨부파일 등록" />
+                                        <img src="" class="preview" alt="" style="display:none;" />
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="form-list-type02 document-list02" style="display:none;">
+                                <li>
+                                    <strong>· 신분증 사본</strong>
+                                    <label class="file-upload">
+                                        <input type="file" accept="image/*" title="첨부파일 등록" />
+                                        <img src="" class="preview" alt="" style="display:none;" />
+                                    </label>
+                                </li>
+                                <li>
+                                    <strong>· 주민등록초본</strong>
+                                    <label class="file-upload">
+                                        <input type="file" accept="image/*" title="첨부파일 등록" />
+                                        <img src="" class="preview" alt="" style="display:none;" />
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="term-box">
+                                <input type="checkbox" name="termCheck" id="termCheck" />
+                                <label for="termCheck"><span>[필수] 개인정보 수집 취급 동의 안내</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont-foot">
+                        <button type="button" class="btn" title="쿠폰 발급하기">쿠폰 발급하기</button>
+                    </div>
+                </div>
+
+                <div class="cont-wrap term-wrap">
+                    <div class="cont-head">
+                        <h1>약관 확인</h1>
+                        <button type="button" class="btn-close">닫기</button>
+                    </div>
+                    <div class="cont-body">
+                        <h2>개인정보 수집 취급 동의 안내</h2>
+                        <ul>
+                            <li>
+                                <strong>· 개인정보를 제공받는 자</strong>
+                                <p>타이어뱅크㈜</p>
+                            </li>
+                            <li>
+                                <strong>· 개인정보 수집 항목</strong>
+                                <p>이름, 휴대폰 번호, 차량번호, 주민등록번호, 자동차등록증, 가족관계증명서, 신분증 사본, 주민등록초본</p>
+                            </li>
+                            <li>
+                                <strong>· 개인정보 수집 이용 및 목적</strong>
+                                <p>이벤트 대상 여부 확인</p>
+                            </li>
+                            <li>
+                                <strong>· 개인정보 보유 및 이용기간</strong>
+                                <p>이벤트 종료 후 최대 6개월 이내 파기</p>
+                            </li>
+                        </ul>
+                        <p>당사는 이벤트 진행을 위하여 위 내용과 같이 업무를 처리합니다.</p>
+                    </div>
+                    <div class="cont-foot">
+                        <button type="button" class="btn round" title="약관 동의하기">동의</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 초기화
+        $('.cont-wrap').eq(0).show().siblings().hide();
+        $('.cont-wrap:not(.form-wrap)').find('.btn').on('click',function(){
+            $(this).parent().parent().hide().next('.cont-wrap').show();
+        });
+
+        // input clear
+        $('.clear-input').on('input propertychange',function(){
+            var $this = $(this);
+            var visible = Boolean($this.val());
+            $this.siblings('.clear-btn').toggleClass('on',visible);
+        }).trigger('propertychange');
+
+        $('.clear-btn').click(function(){
+            $(this).siblings('.clear-input').val('')
+            .trigger('propertychange').focus();
+        });
+
+        // 할인 쿠폰 선택
+        $('input[name=coupon]').on('click',function(){
+            if($('input[id=disc50]').is(':checked')){
+                $('.receipt-group').hide();
+                $('.document-list02').hide();
+            }
+            if($('input[id=disc100]').is(':checked')){
+                $('.receipt-group').eq(0).show();
+                $('.document-list02').show();
+                $('input[id=receiptN]').prop('checked',true);
+            }
+        });
+
+        // 원천징수영수증 신청 여부 - default 신청 안함
+        $('input[name=receiptApply]').on('click',function(){
+            if($('input[id=receiptY]').is(':checked')){
+                $('.receipt-group').eq(1).show();
+            }
+            if($('input[id=receiptN]').is(':checked')){
+                $('.receipt-group').eq(1).hide();
+                $('input[id=email]').prop('checked',true);
+                $('.email-item').show();
+                $('.addr-item').hide();
+            }
+        });
+
+        // 원천징수영수증 발급 방법
+        $('input[name=receiptWay]').on('click',function(){
+            if($('input[id=email]').is(':checked')){
+                $('.email-item').show();
+                $('.addr-item').hide();
+            }
+            if($('input[id=post]').is(':checked')){
+                $('.email-item').hide();
+                $('.addr-item').show();
+            }
+        });
+
+        // 이미지 파일 미리보기
+        $('input[type=file]').on('change',function(event){
+            var $this = $(this);
+            var file = event.target.files[0];
+            var reader = new FileReader(); 
+            reader.onload = function(e) {
+                $this.siblings('.preview').attr('src',e.target.result).show();
+            }
+            reader.readAsDataURL(file);
+        });
+
+        // 개인정보 동의
+        $('.term-box label').on('click',function(){
+            $('.term-wrap').show().siblings('.cont-wrap').hide();
+        });
+        $('.term-wrap .btn-close').on('click',function(){
+            $('.term-wrap').hide().prev('.form-wrap').show();
+            $('.term-box label').prev().prop('checked',false);
+        });
+        $('.term-wrap .btn').on('click',function(){
+            $('.term-wrap').hide().prev('.form-wrap').show();
+            $('.term-box label').prev().prop('checked',true);
+        });
+    </script>
+</body>
+</html>
