@@ -237,6 +237,7 @@ body {
 .logo {
     width: 100px;
     height: 78px;
+    font-size: 0;
 }
 .logo a {
     display: block;
