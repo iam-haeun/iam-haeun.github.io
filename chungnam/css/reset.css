@@ -1,0 +1,20 @@
+body, html {
+    font-size: 17px; 
+    letter-spacing: -1px; 
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    font-weight: normal;
+}
+a,p {
+    margin: 0; 
+    padding: 0;
+    color: #444444;
+    word-break: keep-all;
+}
+ul,li,ol,dl {
+    list-style:none;
+    padding:0px;
+    margin: 0px;
+}
+ 

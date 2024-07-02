@@ -1,0 +1,180 @@
+@CHARSET "UTF-8";
+.eyes_heart {
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px auto 0;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.eyes_heart li {
+    width: 50%;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #777;
+    float: left;
+}
+
+.eyes_heart li:first-child {
+    border-left: none;
+}
+
+.eyes_heart li a {
+    color: #777;
+}
+
+.eyes_heart li a span {
+    color: #e44949;
+}
+.topic-top{
+	font-weight: bold;
+	color: #ff4c52;
+}
+
+#explanation_box .board_contents_box .board_row_contents ul li{
+	text-align: center;
+}
+#explanation_box .board_contents_box .board_head ul li{
+	text-align: center;
+}
+
+@media (max-width:768px) {
+	#explanation_box .board_contents_box ul li.writer{
+		width: 8.875rem;
+	   	max-width: 8.875rem;
+	}
+	
+	#explanation_box .board_contents_box ul li.writer:after{
+		right: 0.8rem;
+	}
+}
+.pupose-wrap .con > img{display: block;}
+.pupose-wrap .lf-warp{ 
+	float: right;
+	padding-right:50px;
+} 
+         
+.pupose-wrap .rg-warp{ 
+   	float: left;
+   	padding-left:50px;
+} 
+         
+@media (max-width:768px) {
+	.pupose-wrap .lf-warp{ 
+		float: none;
+        padding-right:0px;
+	} 
+          
+	.pupose-wrap .rg-warp{ 
+		float: none;
+      	padding-top:40px;
+      	padding-left:0px;
+	} 
+}
+
+.pupose-wrap .con h3{font-size: 2.58rem; font-weight: bold; letter-spacing: -1px;}
+.pupose-wrap .con .tit{font-size: 1.75rem; color: #0063C8; letter-spacing: -1px; margin: 20px 0px;}
+.pupose-wrap .con .txt{letter-spacing: -1px; margin-top: 25px;}
+
+/* 초기화 */
+legend, caption, .skip{position:absolute;left:-5000px;top:0;overflow:hidden;line-height:0.1%;font-size:0.1%;width:0.1%;height:0.1%;}
+/* End of 초기화 */
+
+/* 팝업영역 */
+/* 팝업모바일 */
+.popupAreaM {width:100%;display:none;position:absolute;top:20px;left:50%;margin-left:-50%;z-index:9999;border:2px solid #000000;/*background-radius:6px;-webkit-border-radius:6px;*/}
+.popupAreaM ul{padding:0px;margin:0px;list-style:none;}
+.popupAreaM a.popupAreaContent{width:100%;display:inline-block;background:#fff;}
+.popupAreaM .popupClosebtnArea{position:relative;height:40px;line-height:40px;padding:0 10px;background: rgba(49, 49, 49, 0.8);color:#fff;}
+.popupAreaM .popupClosebtnArea .popupAreaCloseBtn{position:absolute;top:0px;right:0;padding:0 15px;font-size:24px;color:#fff;font-weight:bold}
+.popupAreaM .se2img{width:100%;}
+/* 팝업PC */
+.popupArea {/*min-width:600px;*/display:none;position:absolute;top:20px;left:50%;margin-left:-300px;z-index:9999;border:2px solid #000000;/*background-radius:6px;-webkit-border-radius:6px;*/}
+.popupArea ul{padding:0px;margin:0px;list-style:none;}
+.popupArea a.popupAreaContent{display:inline-block;background:#fff;}
+.popupArea .popupClosebtnArea{position:relative;height:40px;line-height:40px;padding:0 10px;background: rgba(49, 49, 49, 0.8);color:#fff;}
+.popupArea .popupClosebtnArea .popupAreaCloseBtn{position:absolute;top:0px;right:0;padding:0 15px;font-size:24px;color:#fff;font-weight:bold}
+.popupArea .se2img{/*width:600px;*/}
+/* 팝업공통 */
+.popupAreaClose {
+    display: none;
+}
+.popupAreaClose + label {
+    color: #212121;
+    font-weight: normal;
+}
+.popupAreaClose + label {
+    color: #fff;
+    font-weight: normal;
+}
+.popupAreaClose + label span {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: -2px 5px 0 0;
+    vertical-align: middle;
+    background: url(/common/img/ico_radio.png) 0px center no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.popupAreaClose:checked + label span {
+    background: url(/common/img/ico_radio.png) right top no-repeat;
+    background-size: auto 100%;
+}
+/* End of 팝업영역 */
+
+/* 어촌특화사업 > 개념과 추진방법  */
+.mgb0px{margin-bottom: 0px !important;}
+.img_cont{vertical-align: middle; padding-left: 20px;}
+.p_tit{font-size:20px; font-weight:bold;}
+.p_cont{padding-top: 30px; padding-right: 20px; line-height: 25px;}
+.img_way{width: 100%; max-width: 56.75rem;}
+/* End of 어촌특화사업 > 개념과 추진방법  */
+
+
+/* 귀어귀촌의 이해 > 귀어귀촌이란?  */
+.cont_info{color:#757575; line-height: 30px; padding-top:10px; padding-bottom:30px; padding-left:10px;}
+.img_nm{text-align:center; background-color:#fafafa; width:33%; font-weight:bold;}
+.img_text{padding-top:20px; padding-bottom:30px; padding-left:30px; line-height:30px; color:#757575; vertical-align: text-top;}
+
+.scroll_table{width:100%; overflow:auto;}
+.scroll_table table{white-space:nowrap; border-collapse:collapse}
+.scroll_table table th,.scroll_table table td {border: solid 1px #dbdbdb;}
+/* End of 귀어귀촌의 이해 */
+
+/* 귀어귀촌의 이해 > 준비절차  */
+.prepare_img{width: 100%; max-width: 48.75rem;}
+/* End of 귀어귀촌의 이해 */
+
+/* 귀어귀촌센터 > 센터소> 사업목적  */
+#explanation_box .icon_num_text{position:relative;}
+#explanation_box .icon_num_text .minheight_intro {float: left; width: 1px; height: 35rem;}
+#explanation_box .icon_num_text .text_line {float: left; display: block; width: 4.875rem; height: 11.875rem; background-repeat: no-repeat; background-position: center; background-size: 7.5rem 7.5rem;}
+#explanation_box .icon_num_text .icon_line{position: absolute; height: 100%; top: 60px; left: 35px; z-index: -1; border:1px solid #015aa4;}
+
+.intro_tit{color: #004e9d; font-weight: 900; font-size: 20px; vertical-align: super;}
+.info_tit{color:#015aa4; font-weight:bold; padding-top:10px; padding-bottom: 10px;}
+.tit_box{border:1px solid #015aa4; background-color:#fff; color:#015aa4; padding: 5px 20px; line-height: 35px;}
+.g_dot{width:60%; display:inline-block;}
+/* End of 귀어귀촌센터 > 센터소개 > 사업목적 */
+
+/* 체험마을  */
+.img_country{width: 100%; max-width: 75.75rem;}
+/* End of 체험마을 */
+
+/* 어촌특화사업 > 개념과 추진방법  */
+.p_cont{padding:0px;}
+/* End of 어촌특화사업 > 개념과 추진방법  */
+
+/* 귀어귀촌센터 > 센터소개 > 사업목적  */
+#explanation_box .icon_num_text .minheight_intro {height: 10rem;}
+#explanation_box .icon_num_text .icon_line {top: 123px; left: 30px;}
+.i_gray_line_box{display:none;}
+.text_line{display:none !important; }
+.icon_line{display:none;}
+/* End of 귀어귀촌센터 > 센터소개 > 사업목적 */
