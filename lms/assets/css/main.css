@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+.more-btn {transition:all .3s;}
+.more-btn:hover,
+.more-btn:active,
+.more-btn:focus {transform:rotate(90deg);}
+
+/** 타이틀 공통 **/
+.sc-title .tit {font-size:24px; font-family:'NanumSquareNeo';}
+
+/** 비주얼 **/
+.section-01 {padding:50px 0 30px;}
+.section-01 .inner {display:flex; flex-wrap:wrap; justify-content:space-between;}
+.sc-banner {width:calc(100% - 380px); margin-bottom:35px;}
+.sc-banner .img-wrap {display:block; width:100%; height:350px;}
+.sc-banner .img-wrap img {display:block; width:100%; height:100%;}
+
+/** 로그인 **/
+.sc-login {width:340px; height:350px; padding:27px; border-radius:0 20px 0 20px; background:#f3f3f7;}
+.sc-login .sc-title {margin-bottom:25px; text-align:center;}
+.sc-login .sc-title .tit {margin-bottom:10px;}
+.sc-login .form-list {margin-bottom:30px;}
+.sc-login .form-list li + li {margin-top:10px;}
+.sc-login .form-list li input {width:100%; height:45px; padding-left:45px; background-color:#fff; background-repeat:no-repeat; background-position:left 20px center;}
+.sc-login .form-list li .input-id {background-image:url(../img/icon/ico_id.svg);}
+.sc-login .form-list li .input-pw {background-image:url(../img/icon/ico_pw.svg);}
+.sc-login .login-btn {width:100%; height:45px; margin-bottom:10px; font-size:17px; line-height:45px;}
+.sc-login .utils {text-align:center;}
+.sc-login .utils a + a {margin-left:20px;}
+
+/** 통합검색 **/
+.sc-search {position:relative; width:calc(100% - 780px);}
+.sc-search::before {content:''; position:absolute; bottom:-31px; left:-173px; width:173px; height:177px; background:url(../img/main/bg_main01.png);}
+.sc-search .sc-title {margin-bottom:40px;}
+.sc-search .sc-title .tit {margin-bottom:15px;}
+.sc-search .search-box {position:relative; border-bottom:2px solid var(--base-color);}
+.sc-search .search-input {width:100%; height:50px; padding-right:50px;}
+.sc-search .search-btn {position:absolute; top:0; right:0; width:50px; height:50px; background:url(../img/icon/ico_search.svg) no-repeat center;}
+
+/** 퀵메뉴 **/
+.sc-quick {width:740px; padding:18px 25px; background:#f3f3f7;}
+.sc-quick .tit {font-weight:400; font-size:14px; color:#5c6673; letter-spacing:2px;}
+.sc-quick .quick-menu {display:flex; align-items:center; justify-content:center;}
+.sc-quick .quick-menu li {position:relative; text-align:center;}
+.sc-quick .quick-menu li + li {margin-left:200px;}
+.sc-quick .quick-menu li + li::before {content:''; position:absolute; top:calc(50% - 40%); left:-100px; width:1px; height:80%; background:#5c6673;}
+.sc-quick .quick-menu li a {display:block; font-size:18px;}
+.sc-quick .quick-menu li a::before {content:''; display:block; width:85px; height:76px; margin:0 auto 10px; background-repeat:no-repeat; background-position:center; background-size:contain;}
+.sc-quick .quick-menu li a:hover::before,
+.sc-quick .quick-menu li a:active::before,
+.sc-quick .quick-menu li a:focus::before {animation:vibes 1s ease infinite;}
+.sc-quick .quick-menu li:nth-child(1) a::before {background-image:url(../img/main/ico_quick01.png);}
+.sc-quick .quick-menu li:nth-child(2) a::before {background-image:url(../img/main/ico_quick02.png);}
+
+@keyframes vibes {
+	0% {transform:translateY(0);}
+	20% {transform:translateY(3px);}
+	40% {transform:translateY(0);}
+	60% {transform:translateY(3px);}
+	100% {transform:translateY(0);}
+}
+
+/** 추천 데이터 **/
+.section-02 {position:relative; padding:30px 0; background:#5c6673;}
+.section-02::after {content:''; position:absolute; bottom:0; left:0; width:100%; height:100px; background:#fff;}
+.sc-data {position:relative;}
+.sc-data::after {content:''; position:absolute; bottom:15px; right:-185px; z-index:1; width:159px; height:209px; background:url(../img/main/bg_main02.png);}
+.sc-data .sc-title {margin-bottom:50px; color:#fff; text-align:center;}
+.sc-data .slide-wrap {position:relative; padding:0 70px;}
+.sc-data .data-slide .swiper-slide {width:320px; margin:0 24px 6px;}
+.sc-data .item {display:block; width:100%; padding:15px; border-radius:0 20px 0 20px; background:#fff; box-shadow:0 3px 6px 0 rgba(92,102,115,.2); text-align:center;}
+.sc-data .item .img-wrap {overflow:hidden; width:100%; margin-bottom:15px; border-radius:10px;}
+.sc-data .item .img-wrap img {display:block; width:100%; height:190px;}
+.sc-data .item .tit {display:block; margin-bottom:10px; font-size:20px;}
+.sc-data .item .info {margin-bottom:20px; text-align:left;}
+.sc-data .item .info dl {display:flex; align-items:flex-start;}
+.sc-data .item .info dl dt {display:flex; align-items:center; width:90px; margin-right:10px; font-weight:500;}
+.sc-data .item .info dl dt::before {content:''; display:inline-block; width:17px; height:17px; margin-right:5px;}
+.sc-data .item .info dl.date dt::before {background-image:url(../img/icon/ico_calendar.svg);}
+.sc-data .item .info dl.time dt::before {background-image:url(../img/icon/ico_clock.svg);}
+.sc-data .item .info dl.loca dt::before {background-image:url(../img/icon/ico_location.svg);}
+.sc-data .item .info dl dd {flex:1;}
+.sc-data .item .link {display:inline-block; padding:5px 15px; border-radius:17px; border:1px solid #707070;}
+.sc-data .btn-prev,
+.sc-data .btn-next {position:absolute; top:calc(50% - 32px); z-index:1; width:65px; height:65px; border-radius:50%; background-color:var(--base-color); background-repeat:no-repeat; background-position:center; box-shadow:0 3px 6px 0 rgba(0,0,0,.2);}
+.sc-data .btn-prev {left:-40px; background-image:url(../img/main/nav_prev.svg);}
+.sc-data .btn-next {right:-40px; background-image:url(../img/main/nav_next.svg);}
+
+/** 소식 탭 **/
+.section-03 {padding:70px 0;}
+.section-03 .inner {display:flex; justify-content:space-between;}
+.sc-news {flex:1; height:263px;}
+.sc-news .tab-menu {display:flex; position:relative; border-bottom:1px solid #5c6673;}
+.sc-news .tab-menu > li > .tab-tit {display:block; padding:10px 20px; font-weight:bold; font-size:24px; font-family:'NanumSquareNeo'; color:#666;}
+.sc-news .tab-menu > li.active > .tab-tit {background:var(--base-color); color:#fff;}
+.sc-news .tab-cont {display:none; position:absolute; top:52px; left:0; width:100%;}
+.sc-news .tab-cont.active {display:block;}
+.sc-news .tab-cont ul li + li {border-top:1px solid var(--bg-color);}
+.sc-news .tab-cont ul li a {display:flex; position:relative; padding:15px 0; font-size:18px;}
+.sc-news .tab-cont ul li a .date {width:100px; font-weight:300; color:#7d7d7d;}
+.sc-news .tab-cont ul li a .tit {display:block; flex:1; overflow:hidden; padding-left:10px; font-weight:400; text-overflow:ellipsis; white-space:nowrap;}
+.sc-news .tab-cont ul li a:hover .tit,
+.sc-news .tab-cont ul li a:active .tit,
+.sc-news .tab-cont ul li a:focus .tit {text-decoration:underline;}
+.sc-news .more-btn {position:absolute; top:-38px; right:0; width:24px; height:24px; background:url(../img/icon/ico_more.svg) no-repeat center / cover; font-size:0;}
+
+/** 문의하기 **/
+.sc-qna {width:500px; margin-left:50px; padding:25px; border-radius:0 20px 0 20px; background:#f3f3f7; box-shadow:0 3px 6px 0 rgba(50,58,67,.2);}
+.sc-qna .sc-title {position:relative;}
+.sc-qna .more-btn {position:absolute; top:calc(50% - 21px); right:0; width:42px; height:42px; border-radius:50%; background:var(--base-color) url(../img/icon/ico_more_w.svg) no-repeat center; font-size:0;}
+.sc-qna .qna-list {margin-top:20px;}
+.sc-qna .qna-list li + li {border-top:1px solid #dbdbdb;}
+.sc-qna .qna-list li a {display:block; overflow:hidden; padding:15px 0; font-size:18px; text-overflow:ellipsis; white-space:nowrap;}
+
+
+/** 1600px 시작 **/
+@media screen and (max-width:1600px) {
+	/** 통합검색 **/
+	.sc-search::before {content:none;}
+
+	/** 추천 데이터 **/
+	.sc-data::after {content:none;}
+	.sc-data .btn-prev {left:10px;}
+	.sc-data .btn-next {right:10px;}
+}
+/** 1600px 끝 **/
+
+/** 1280px 시작 **/
+@media screen and (max-width:1280px) {
+	/** 타이틀 공통 **/
+	.sc-title .tit {font-size:20px;}
+
+	/** 비주얼 **/
+	.sc-banner {width:100%;}
+	.sc-banner .img-wrap {height:auto;}
+
+	/** 로그인 **/
+	.sc-login {display:none;} 
+
+	/** 통합검색 **/
+	.sc-search {width:calc(50% - 20px);}
+    
+	/** 퀵메뉴 **/
+	.sc-quick {width:calc(50% - 20px);}
+	.sc-quick .quick-menu li + li {margin-left:100px;}
+	.sc-quick .quick-menu li + li::before {left:-50px;}
+
+	/** 추천 데이터 **/
+	.section-02::after {content:none;}
+	.section-02 .inner {max-width:none; padding:0;}
+	.sc-data .slide-wrap {padding:0;}
+
+	/** 소식 탭 **/
+	.sc-news {flex:0 auto; width:calc(50% - 20px);}
+	.sc-news .tab-menu > li > .tab-tit {font-size:20px;}
+
+	/** 문의하기 **/ 
+	.sc-qna {width:calc(50% - 20px); margin-left:0;}
+}
+/** 1280px 끝 **/
+
+/** 767px 시작 **/
+@media screen and (max-width:767px) {
+	/** 타이틀 공통 **/
+	.sc-title .tit {font-size:16px;}
+
+	/** 비주얼 **/
+	.section-01 {padding:20px 0;}
+	.sc-banner {order:2; margin-bottom:15px;}
+
+    /** 통합검색 **/
+	.sc-search {order:1; width:100%; margin-bottom:15px;}
+	.sc-search .sc-title {display:none;}
+	.sc-search .search-box {border:0; background:#f3f3f7;}
+	.sc-search .search-btn {width:40px; background-size:20px;}
+    
+	/** 퀵메뉴 **/
+	.sc-quick {order:3; width:100%; padding:10px;}
+	.sc-quick .tit {font-size:12px;}
+	.sc-quick .quick-menu li + li::before {top:calc(50% - 20%); height:40%;}
+	.sc-quick .quick-menu li a {font-size:14px;}
+	.sc-quick .quick-menu li a::before {width:60px; height:54px;}
+
+	/** 추천 데이터 **/
+	.sc-data .sc-title {margin-bottom:20px;}
+	.sc-data .data-slide .swiper-slide {width:200px; margin:0 15px 6px;}
+	.sc-data .item .img-wrap img {height:auto;}
+	.sc-data .item .tit {font-size:15px;}
+	.sc-data .item .info {display:none;}
+	.sc-data .item .link {font-size:13px;}
+	.sc-data .btn-prev,
+	.sc-data .btn-next {width:50px; height:50px; background-size:10px;}
+
+	/** 소식 탭 **/
+	.section-03 {padding:30px 0;}
+	.section-03 .inner {flex-direction:column;}
+	.sc-news {flex:1 0 auto; width:100%; height:196px; margin-bottom:40px;}
+	.sc-news .tab-menu > li > .tab-tit {padding:7px 15px; font-size:16px;}
+	.sc-news .tab-cont {top:35px;}
+	.sc-news .tab-cont ul li a {padding:10px 0; font-size:15px;}
+	.sc-news .tab-cont ul li a .date {width:80px;}
+	.sc-news .more-btn {top:-31px; width:20px; height:20px;}
+
+	/** 문의하기 **/ 
+	.sc-qna {width:100%; padding:15px;}
+	.sc-qna .more-btn {top:calc(50% - 15px); width:30px; height:30px; background-size:15px;}
+	.sc-qna .qna-list {margin-top:10px;}
+	.sc-qna .qna-list li a {padding:10px 0; font-size:15px;}
+}
+/** 767px 끝 **/
