@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>IV-LMS 인터랙티브 동영상 교육 관리시스템</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/nice-select.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css" />
+    <script type="text/javascript" src="../../assets/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.nice-select.js"></script>
+    <script type="text/javascript" src="../../assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/common.js"></script>
+    <script type="text/javascript" src="../../assets/js/main.js"></script>
+    <!-- ie css 변수적용 -->
+    <script type="text/javascript" src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- s : header -->
+        <header id="header">
+            <h1 class="logo">
+                <a href="../main/index.html"><span class="blind">IV-LMS 인터랙티브 동영상 교육 관리시스템</span></a>
+            </h1>
+            <a href="#" class="mo-btn"><span class="blind">모바일메뉴</span></a>
+            <nav id="gnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="">교육 수강</a>
+                        <ul class="depth2">
+                            <li><a href="../edu/appList.html">수강 신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                        <ul class="depth2">
+                            <li><a href="../commu/noticeList.html">공지사항</a></li>
+                            <li><a href="../commu/qnaList.html">문의하기</a></li>
+                            <li><a href="../commu/dateList.html">자료실</a></li>
+                            <li><a href="../commu/surveyList.html">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">나의 강의실</a>
+                        <ul class="depth2">
+                            <li><a href="../room/studyList.html">학습 진행 과정</a></li>
+                            <li><a href="../room/studyEndList.html">학습 완료 과정</a></li>
+                            <li><a href="../room/appDetailList.html">수강 신청 내역</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="utils">
+                <li><a href="../mber/login.html">로그인</a></li>
+                <li><a href="#menu-all" class="menu-btn"><span class="blind">전체메뉴</span></a></li>
+            </ul>
+            <div id="menu-all">
+                <ul class="depth1">
+                    <li>
+                        <a href="">교육 수강</a>
+                        <ul class="depth2">
+                            <li><a href="../edu/appList.html">수강 신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                        <ul class="depth2">
+                            <li><a href="../commu/noticeList.html">공지사항</a></li>
+                            <li><a href="../commu/qnaList.html">문의하기</a></li>
+                            <li><a href="../commu/dateList.html">자료실</a></li>
+                            <li><a href="../commu/surveyList.html">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">나의 강의실</a>
+                        <ul class="depth2">
+                            <li><a href="../room/studyList.html">학습 진행 과정</a></li>
+                            <li><a href="../room/studyEndList.html">학습 완료 과정</a></li>
+                            <li><a href="../room/appDetailList.html">수강 신청 내역</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- e : header -->
+
+        <!-- s : container -->
+        <main id="container">
+            <div id="content">
+                <section class="section-01">
+                    <div class="inner">
+                        <div class="sc-banner">
+                            <a href="" class="img-wrap">
+                                <img src="../../assets/img/main/banner01.png" alt="궁금증 해결 궁금한 것이 있으신가요? QnA를 통해 해결해 드립니다. 문의하러가기" />
+                            </a>
+                        </div>
+                        <div class="sc-login">
+                            <div class="sc-title">
+                                <h2 class="tit t-hl">로그인</h2>
+                                <p>로그인하여 다양한 서비스를 이용하세요.</p>
+                            </div>
+                            <ul class="form-list">
+                                <li><input type="text" class="input-id" placeholder="아이디" title="아이디" required /></li>
+                                <li><input type="password" class="input-pw" placeholder="비밀번호" title="비밀번호" required /></li>
+                            </ul>
+                            <button type="submit" class="login-btn btn basic round">로그인</button>
+                            <div class="utils">
+                                <a href="../mber/join.html" class="t-line">회원가입</a> 
+                                <a href="../mber/findIdpw.html" class="t-line">아이디/비밀번호 찾기</a>
+                            </div>
+                        </div>
+                        <div class="sc-search">
+                            <div class="sc-title">
+                                <h2 class="tit t-hl">찾으시는게 있으신가요?</h2>
+                                <p>관심있는 주제를 입력해보세요.</p>
+                            </div>
+                            <div class="search-box">
+                                <input type="text" class="search-input" placeholder="관심있는 주제 검색" title="통합검색" />
+                                <button type="submit" class="search-btn" title="검색"><span class="blind">검색</span></button>
+                            </div>
+                        </div>
+                        <div class="sc-quick">
+                            <strong class="tit">Quick Menu</strong>
+                            <ul class="quick-menu">
+                                <li><a href="../edu/appList.html">수강 신청</a></li>
+                                <li><a href="../commu/surveyList.html">설문조사</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-02">
+                    <div class="inner">
+                        <div class="sc-data">
+                            <div class="sc-title">
+                                <h2 class="tit">현재 접수 진행중인 목록</h2>
+                            </div>
+                            <div class="slide-wrap">
+                                <div class="data-slide swiper-container">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="../edu/appList.html" class="item">
+                                                <div class="img-wrap">
+                                                    <img src="../../assets/img/main/data01.png" alt="" />
+                                                </div>
+                                                <strong class="tit">디지털논리회로</strong>
+                                                <div class="info">
+                                                    <dl class="date">
+                                                        <dt>교육 일자</dt>
+                                                        <dd>2023-07-03 ~ 2023-07-27</dd>
+                                                    </dl>
+                                                    <dl class="time">
+                                                        <dt>교육 시간</dt>
+                                                        <dd>10시 00분 - 12시 00분</dd>
+                                                    </dl>
+                                                    <dl class="loca">
+                                                        <dt>교육 장소</dt>
+                                                        <dd>한국대 공학 1호관</dd>
+                                                    </dl>
+                                                </div>
+                                                <span class="link">수강신청 바로가기</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="../edu/appList.html" class="item">
+                                                <div class="img-wrap">
+                                                    <img src="../../assets/img/main/data02.png" alt="" />
+                                                </div>
+                                                <strong class="tit">정보보안</strong>
+                                                <div class="info">
+                                                    <dl class="date">
+                                                        <dt>교육 일자</dt>
+                                                        <dd>2023-05-17 ~ 2024-06-10</dd>
+                                                    </dl>
+                                                    <dl class="time">
+                                                        <dt>교육 시간</dt>
+                                                        <dd>14시 30분 - 16시 30분</dd>
+                                                    </dl>
+                                                    <dl class="loca">
+                                                        <dt>교육 장소</dt>
+                                                        <dd>한국대 공학 2호관</dd>
+                                                    </dl>
+                                                </div>
+                                                <span class="link">수강신청 바로가기</span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="../edu/appList.html" class="item">
+                                                <div class="img-wrap">
+                                                    <img src="../../assets/img/main/data03.png" alt="" />
+                                                </div>
+                                                <strong class="tit">시스템과 정보보안</strong>
+                                                <div class="info">
+                                                    <dl class="date">
+                                                        <dt>교육 일자</dt>
+                                                        <dd>2023-05-29 ~ 2023-05-31</dd>
+                                                    </dl>
+                                                    <dl class="time">
+                                                        <dt>교육 시간</dt>
+                                                        <dd>00시 00분 - 00시 00분</dd>
+                                                    </dl>
+                                                    <dl class="loca">
+                                                        <dt>교육 장소</dt>
+                                                        <dd>한국대</dd>
+                                                    </dl>
+                                                </div>
+                                                <span class="link">수강신청 바로가기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn-prev"><span class="blind">이전 슬라이드</span></button>
+                                <button type="button" class="btn-next"><span class="blind">다음 슬라이드</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-03">
+                    <div class="inner">
+                        <div class="sc-news">
+                            <ul class="tab-menu">
+                                <li class="active">
+                                    <a href="#" class="tab-tit">공지사항</a>
+                                    <div class="tab-cont active">
+                                        <ul>
+                                            <li>
+                                                <a href="../commu/noticeView.html" title="산업안전보건교육 규정 변경 안내 자세히 보기">
+                                                    <span class="date">2023-07-20</span>
+                                                    <strong class="tit">산업안전보건교육 규정 변경 안내</strong>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../commu/noticeView.html" title="수강안내문 (기업담당자용, 학습자용) 자세히 보기">
+                                                    <span class="date">2023-04-05</span>
+                                                    <strong class="tit">수강안내문 (기업담당자용, 학습자용)</strong>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../commu/noticeView.html" title="중대재해처벌법 대응 진단 컨설팅 (안전보건진단) 안내 자세히 보기">
+                                                    <span class="date">2023-03-28 </span>
+                                                    <strong class="tit">중대재해처벌법 대응 진단 컨설팅 (안전보건진단) 안내</strong>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="../commu/noticeView.html" title="법정필수교육 강의 수강 메뉴얼 자세히 보기">
+                                                    <span class="date">2023-03-28</span>
+                                                    <strong class="tit">법정필수교육 강의 수강 메뉴얼</strong>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="../commu/noticeList.html" class="more-btn" title="공지사항 더보기">더보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="tab-tit">자료실</a>
+                                    <div class="tab-cont">
+                                        <ul>
+                                            <li>
+                                                <a href="" title="직장 내 성희롱 예방 교육기관 지정서 자세히 보기">
+                                                    <span class="date">2023-07-20</span>
+                                                    <strong class="tit">직장 내 성희롱 예방 교육기관 지정서</strong>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="2023년 오프라인 강의 계획표 자세히 보기">
+                                                    <span class="date">2023-04-05</span>
+                                                    <strong class="tit">2023년 오프라인 강의 계획표</strong>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="2023년 온라인 강의 계획표 자세히 보기">
+                                                    <span class="date">2023-07-20</span>
+                                                    <strong class="tit">2023년 온라인 강의 계획표</strong>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="산업안전보건법 전부개정 안내 리플릿 자세히 보기">
+                                                    <span class="date">2023-03-28</span>
+                                                    <strong class="tit">산업안전보건법 전부개정 안내 리플릿</strong>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="../commu/dateList.html" class="more-btn" title="자료실 더보기">더보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sc-qna">
+                            <div class="sc-title">
+                                <h2 class="tit">문의하기 (QnA)</h2>
+                                <a href="../commu/qnaList.html" class="more-btn" title="문의하기 더보기">더보기</a>
+                            </div>
+                            <ul class="qna-list">
+                                <li><a href="../commu/qnaView.html" title="교육 동영상이 자꾸 끊기는 것 같습니다 자세히 보기">교육 동영상이 자꾸 끊기는 것 같습니다</a></li>
+                                <li><a href="../commu/qnaView.html" title="교육을 모두 들었는데 이수완료 처리가 되지않습니다 자세히 보기">교육을 모두 들었는데 이수완료 처리가 되지않습니다</a></li>
+                                <li><a href="../commu/qnaView.html" title="교육 동영상이 뚝뚝 끊겨요 자세히 보기">교육 동영상이 뚝뚝 끊겨요</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- e : container -->
+
+        <!-- s : footer -->
+        <footer id="footer">
+            <div class="footer-wrap">
+                <ul class="footer-nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">사이트이용약관</a></li>
+                </ul>
+                <div class="footer-info">
+                    <ul class="address">
+                        <li>본사주소 : 대전광역시 서구 둔산동 갈마역로 14, 203호(둔산동, 하이스트빌)</li>
+                        <li>서울사무소 : 서울특별시 양천구 목동동로 293, 1116-1호(목동, 현대41타워)</li>
+                    </ul>
+                    <ul class="tel">
+                        <li>대표번호 : 1800-7290</li>
+                        <li>Tel : 042-471-7290</li>
+                        <li>Fax : 042-471-7291</li>
+                    </ul>
+                    <p class="copyright">copyrightⓒ WATOSYS, All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- e : footer -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>IV-LMS 인터랙티브 동영상 교육 관리시스템 > 커뮤니티 > 문의하기</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/nice-select.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/sub.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/board.css" />
+    <script type="text/javascript" src="../../assets/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.nice-select.js"></script>
+    <script type="text/javascript" src="../../assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/common.js"></script>
+    <script type="text/javascript" src="../../assets/js/main.js"></script>
+    <!-- ie css 변수적용 -->
+    <script type="text/javascript" src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- s : header -->
+        <header id="header">
+            <h1 class="logo">
+                <a href="../main/index.html"><span class="blind">IV-LMS 인터랙티브 동영상 교육 관리시스템</span></a>
+            </h1>
+            <a href="#" class="mo-btn"><span class="blind">모바일메뉴</span></a>
+            <nav id="gnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="">교육 수강</a>
+                        <ul class="depth2">
+                            <li><a href="../edu/appList.html">수강 신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                        <ul class="depth2">
+                            <li><a href="../commu/noticeList.html">공지사항</a></li>
+                            <li><a href="../commu/qnaList.html">문의하기</a></li>
+                            <li><a href="../commu/dateList.html">자료실</a></li>
+                            <li><a href="../commu/surveyList.html">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">나의 강의실</a>
+                        <ul class="depth2">
+                            <li><a href="../room/studyList.html">학습 진행 과정</a></li>
+                            <li><a href="../room/studyEndList.html">학습 완료 과정</a></li>
+                            <li><a href="../room/appDetailList.html">수강 신청 내역</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="utils">
+                <li><a href="../mber/login.html">로그인</a></li>
+                <li><a href="#menu-all" class="menu-btn"><span class="blind">전체메뉴</span></a></li>
+            </ul>
+            <div id="menu-all">
+                <ul class="depth1">
+                    <li>
+                        <a href="">교육 수강</a>
+                        <ul class="depth2">
+                            <li><a href="../edu/appList.html">수강 신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                        <ul class="depth2">
+                            <li><a href="../commu/noticeList.html">공지사항</a></li>
+                            <li><a href="../commu/qnaList.html">문의하기</a></li>
+                            <li><a href="../commu/dateList.html">자료실</a></li>
+                            <li><a href="../commu/surveyList.html">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">나의 강의실</a>
+                        <ul class="depth2">
+                            <li><a href="../room/studyList.html">학습 진행 과정</a></li>
+                            <li><a href="../room/studyEndList.html">학습 완료 과정</a></li>
+                            <li><a href="../room/appDetailList.html">수강 신청 내역</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- e : header -->
+
+        <!-- s : container -->
+        <main id="container">
+            <div id="location">
+                <div class="inner">
+                    <h3>문의하기</h3>
+                    <ul>
+                        <li><a href="../main/index.html">홈</a></li>
+                        <li><a href="../commu/noticeList.html">커뮤니티</a></li>
+                        <li><a href="../commu/qnaList.html">문의하기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content" class="content-wrap">
+                <div class="board-write">
+                    <div class="write-tit">
+                        <input type="text" class="tit" placeholder="제목을 입력하세요" title="제목" />
+                    </div>
+                    <div class="write-cont">
+                        <textarea rows="10" cols="100" placeholder="본문 내용을 입력하세요" title="내용"></textarea>
+                        <div class="txt-length">(0 / 20,000 자)</div>
+                    </div>
+                    <div class="file-box">
+                        <label class="file-label">
+                            <input type="file" title="첨부파일" />
+                            <span class="file-btn">첨부 파일 업로드</span>
+                            <span class="file-name">첨부된 파일이 없습니다.</span>
+                        </label>
+                        <p class="mt-10">첨부파일 업로드 시, 최대 5개의 파일을 업로드할 수 있으며 파일 확장자는 최대 1GB의 jpg, png, gif. mp4, hwp, doc, xls, xlsx. csv, txt, pdf, zip만 허용됩니다.</p>
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="javascript:history.back()" class="btn" title="이전 페이지로 이동">이전</a>
+                        <button type="submit" class="btn basic" title="등록하기">등록</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- e : container -->
+
+        <!-- s : footer -->
+        <footer id="footer">
+            <div class="footer-wrap">
+                <ul class="footer-nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">사이트이용약관</a></li>
+                </ul>
+                <div class="footer-info">
+                    <ul class="address">
+                        <li>본사주소 : 대전광역시 서구 둔산동 갈마역로 14, 203호(둔산동, 하이스트빌)</li>
+                        <li>서울사무소 : 서울특별시 양천구 목동동로 293, 1116-1호(목동, 현대41타워)</li>
+                    </ul>
+                    <ul class="tel">
+                        <li>대표번호 : 1800-7290</li>
+                        <li>Tel : 042-471-7290</li>
+                        <li>Fax : 042-471-7291</li>
+                    </ul>
+                    <p class="copyright">copyrightⓒ WATOSYS, All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- e : footer -->
+    </div>
+    <script>
+        $('input[type=file]').on('change',function(){
+            const fileName = $(this).val().split("\\").pop();
+            $(this).siblings('.file-name').text(fileName || '첨부된 파일이 없습니다.');
+        });
+    </script>
+</body>
+</html>

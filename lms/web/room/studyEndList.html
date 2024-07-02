@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+    <title>IV-LMS 인터랙티브 동영상 교육 관리시스템 > 나의 강의실 > 학습 완료 과정</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/nice-select.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/sub.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/board.css" />
+    <script type="text/javascript" src="../../assets/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.nice-select.js"></script>
+    <script type="text/javascript" src="../../assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/common.js"></script>
+    <script type="text/javascript" src="../../assets/js/main.js"></script>
+    <!-- ie css 변수적용 -->
+    <script type="text/javascript" src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- s : header -->
+        <header id="header">
+            <h1 class="logo">
+                <a href="../main/index.html"><span class="blind">IV-LMS 인터랙티브 동영상 교육 관리시스템</span></a>
+            </h1>
+            <a href="#" class="mo-btn"><span class="blind">모바일메뉴</span></a>
+            <nav id="gnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="">교육 수강</a>
+                        <ul class="depth2">
+                            <li><a href="../edu/appList.html">수강 신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                        <ul class="depth2">
+                            <li><a href="../commu/noticeList.html">공지사항</a></li>
+                            <li><a href="../commu/qnaList.html">문의하기</a></li>
+                            <li><a href="../commu/dateList.html">자료실</a></li>
+                            <li><a href="../commu/surveyList.html">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">나의 강의실</a>
+                        <ul class="depth2">
+                            <li><a href="../room/studyList.html">학습 진행 과정</a></li>
+                            <li><a href="../room/studyEndList.html">학습 완료 과정</a></li>
+                            <li><a href="../room/appDetailList.html">수강 신청 내역</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="utils">
+                <li><a href="../mber/login.html">로그인</a></li>
+                <li><a href="#menu-all" class="menu-btn"><span class="blind">전체메뉴</span></a></li>
+            </ul>
+            <div id="menu-all">
+                <ul class="depth1">
+                    <li>
+                        <a href="">교육 수강</a>
+                        <ul class="depth2">
+                            <li><a href="../edu/appList.html">수강 신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">커뮤니티</a>
+                        <ul class="depth2">
+                            <li><a href="../commu/noticeList.html">공지사항</a></li>
+                            <li><a href="../commu/qnaList.html">문의하기</a></li>
+                            <li><a href="../commu/dateList.html">자료실</a></li>
+                            <li><a href="../commu/surveyList.html">설문조사</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">나의 강의실</a>
+                        <ul class="depth2">
+                            <li><a href="../room/studyList.html">학습 진행 과정</a></li>
+                            <li><a href="../room/studyEndList.html">학습 완료 과정</a></li>
+                            <li><a href="../room/appDetailList.html">수강 신청 내역</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- e : header -->
+
+        <!-- s : container -->
+        <main id="container">
+            <div id="location">
+                <div class="inner">
+                    <h3>학습 완료 과정</h3>
+                    <ul>
+                        <li><a href="../main/index.html">홈</a></li>
+                        <li><a href="../room/studyList.html">나의 강의실</a></li>
+                        <li><a href="../room/studyEndList.html">학습 완료 과정</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content" class="content-wrap">
+                <div class="board-search type-02 float-right">
+                    <select class="select" title="연도 선택">
+                        <option value="">전체년도</option>
+                        <option value="">2021</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                    </select>
+                    <div class="search">
+                        <input type="text" class="search-input" placeholder="검색어를 입력하세요" title="검색어 입력">
+                        <button type="submit" class="search-btn" title="검색"><span class="blind">검색</span></button>
+                    </div>
+                </div>
+                <div class="board-top">
+                    <p class="total">전체 <span class="font-bold">16</span>건</p>
+                </div>
+                <ul class="study-list type-02">
+                    <li>
+                        <div class="info-box">
+                            <div class="box">
+                                <div class="edu-info">
+                                    <div class="img-wrap type-close">
+                                        <img src="../../assets/img/main/data01.png" alt="" />
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong class="tit">디지털논리회로</strong>
+                                        <div class="info">
+                                            <dl class="date">
+                                                <dt>교육 일자</dt>
+                                                <dd>2023-07-03 (월) ~ 2023-07-27 (목)</dd>
+                                            </dl>
+                                            <dl class="time">
+                                                <dt>교육 시간</dt>
+                                                <dd>10시 00분 - 12시 00분</dd>
+                                            </dl>
+                                            <dl class="loca">
+                                                <dt>교육 장소</dt>
+                                                <dd>한국대 공학 1호관</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">학습 정보</div>
+                                <div class="cont-body">시간: 2시간<br> 점수: 20점</div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">이수 여부</div>
+                                <div class="cont-body">
+                                    <span class="cl-blue">이수 완료</span>
+                                    <p class="font-size-14">2023-11-03 (금) 18시 23분</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">설문 참여 여부</div>
+                                <div class="cont-body">
+                                    <span class="cl-blue">참여 완료</span>
+                                    <p class="font-size-14">2023-11-03 (금) 18시 23분</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">수료증</div>
+                                <div class="cont-body"><a href="" class="btn basic">확인하기</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-box">
+                            <div class="box">
+                                <div class="edu-info">
+                                    <div class="img-wrap type-close">
+                                        <img src="../../assets/img/main/data02.png" alt="" />
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong class="tit">정보보안</strong>
+                                        <div class="info">
+                                            <dl class="date">
+                                                <dt>교육 일자</dt>
+                                                <dd>2023-05-17 (수) ~ 2024-06-10 (월)</dd>
+                                            </dl>
+                                            <dl class="time">
+                                                <dt>교육 시간</dt>
+                                                <dd>14시 30분 - 16시 30분</dd>
+                                            </dl>
+                                            <dl class="loca">
+                                                <dt>교육 장소</dt>
+                                                <dd>한국대 공학 2호관</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">학습 정보</div>
+                                <div class="cont-body">시간: 2시간<br> 점수: 20점</div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">이수 여부</div>
+                                <div class="cont-body">
+                                    <span class="cl-blue">이수 완료</span>
+                                    <p class="font-size-14">2023-11-03 (금) 18시 23분</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">설문 참여 여부</div>
+                                <div class="cont-body">
+                                    <span class="cl-blue">참여 완료</span>
+                                    <p class="font-size-14">2023-11-03 (금) 18시 23분</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">수료증</div>
+                                <div class="cont-body">해당 없음</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-box">
+                            <div class="box">
+                                <div class="edu-info">
+                                    <div class="img-wrap type-close">
+                                        <img src="../../assets/img/main/data03.png" alt="" />
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong class="tit">시스템과 정보보안</strong>
+                                        <div class="info">
+                                            <dl class="date">
+                                                <dt>교육 일자</dt>
+                                                <dd>2023-05-29 (월) ~ 2023-05-31 (수)</dd>
+                                            </dl>
+                                            <dl class="time">
+                                                <dt>교육 시간</dt>
+                                                <dd>00시 00분 - 00시 00분</dd>
+                                            </dl>
+                                            <dl class="loca">
+                                                <dt>교육 장소</dt>
+                                                <dd>한국대</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">학습 정보</div>
+                                <div class="cont-body">시간: 2시간<br> 점수: 80점</div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">이수 여부</div>
+                                <div class="cont-body">
+                                    <span class="cl-blue">이수 완료</span>
+                                    <p class="font-size-14">2023-11-03 (금) 18시 23분</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">설문 참여 여부</div>
+                                <div class="cont-body">
+                                    <span class="cl-blue">참여 완료</span>
+                                    <p class="font-size-14">2023-11-03 (금) 18시 23분</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cont-head">수료증</div>
+                                <div class="cont-body"><a href="" class="btn basic">확인하기</a></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pagination">
+                    <a href="#none" class="control first"><span class="blind">맨 처음 페이지</span></a>
+                    <a href="#none" class="control prev"><span class="blind">이전 페이지</span></a>
+                    <a href="#none" class="on"><span class="blind">현재 페이지</span>1</a>
+                    <a href="#none">2</a>
+                    <a href="#none">3</a>
+                    <a href="#none">4</a>
+                    <a href="#none">5</a>
+                    <a href="#none" class="control next"><span class="blind">다음 페이지</span></a>
+                    <a href="#none" class="control last"><span class="blind">맨 끝 페이지</span></a>
+                </div>
+            </div>
+        </main>
+        <!-- e : container -->
+
+        <!-- s : footer -->
+        <footer id="footer">
+            <div class="footer-wrap">
+                <ul class="footer-nav">
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">사이트이용약관</a></li>
+                </ul>
+                <div class="footer-info">
+                    <ul class="address">
+                        <li>본사주소 : 대전광역시 서구 둔산동 갈마역로 14, 203호(둔산동, 하이스트빌)</li>
+                        <li>서울사무소 : 서울특별시 양천구 목동동로 293, 1116-1호(목동, 현대41타워)</li>
+                    </ul>
+                    <ul class="tel">
+                        <li>대표번호 : 1800-7290</li>
+                        <li>Tel : 042-471-7290</li>
+                        <li>Fax : 042-471-7291</li>
+                    </ul>
+                    <p class="copyright">copyrightⓒ WATOSYS, All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- e : footer -->
+    </div>
+</body>
+</html>
