@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+.btn-more {display:block; width:19px; height:19px; background:url(../images/main/ico_more.svg) no-repeat center / contain; transition:all .3s;}
+.btn-more:hover,
+.btn-more:active,
+.btn-more:focus {transform:rotate(90deg);}
+
+/** 타이틀 공통 **/
+.tit-wrap {margin-bottom:15px;}
+.tit-wrap .tit {font-weight:500; font-size:20px; line-height:1.2; color:#004098;}
+
+/** 슬라이드 공통 **/
+.control {display:flex; align-items:center;}
+.control [class*='btn-'] {width:35px; height:35px; margin-left:-1px; border:1px solid #004098; background-repeat:no-repeat; background-position:center; background-size:cover; transition:all .3s;}
+.control [class*='btn-']:hover,
+.control [class*='btn-']:active,
+.control [class*='btn-']:focus {background-color:rgba(195,220,251,.3);}
+.control .btn-prev {background-image:url(../images/main/nav_prev.svg);}
+.control .btn-next {background-image:url(../images/main/nav_next.svg);}
+.control .btn-stop {background-image:url(../images/main/nav_stop.svg);}
+.control .btn-stop.on {background-image:url(../images/main/nav_play.svg);}
+.control .swiper-pagination {position:static; width:auto; padding:0 10px; font-weight:500; color:#004098;}
+.control .progress-bar {position:relative; width:200px; height:1px; background:rgba(0,0,0,.5);}
+.control .progress-ani {position:absolute; top:50%; left:0; width:0; height:5px; background:#004098; animation:progress 5s; transform:translateY(-50%);}
+
+@keyframes progress {
+    0% {width:0;}
+	100% {width:100%;}
+}
+
+/** 비주얼 슬라이드 **/ 
+.section-01 .inner {display:flex;}
+.section-01 .l-con {flex:1; position:relative;}
+.section-01 .r-con {display:flex; flex-wrap:wrap; justify-content:space-between; position:relative; width:780px; padding:20px 0 20px 50px;}
+.section-01 .r-con::before {content:''; position:absolute; top:0; left:0; z-index:-1; width:calc(100vw - (420px + ((100vw - 1200px) / 2))); height:100%; background:#f2f6fb;}
+
+.visual-wrap {position:absolute; top:0; bottom:40px; right:0; width:calc(100vw - (780px + ((100vw - 1200px) / 2)));}
+.visual-wrap .visual-slide {height:100%;}
+.visual-wrap .visual-slide .slide-img {width:100%; height:100%; background-repeat:no-repeat; background-position:center; background-size:cover;}
+.visual-wrap .visual-control {justify-content:flex-end; margin-top:10px; margin-right:20px;}
+.visual-wrap .visual-control [class*='btn-'] {width:30px; height:30px;}
+.visual-wrap .quick-list {display:flex; position:absolute; bottom:25px; right:25px; z-index:1;}
+.visual-wrap .quick-list li + li {margin-left:25px;}
+.visual-wrap .quick-list li a {display:flex; flex-direction:column; align-items:center; justify-content:center; width:90px; height:90px; border-radius:50%; background:#004098; box-shadow:0 3px 6px 0 rgba(9,38,65,.25); font-weight:500; font-size:14px; color:#fff; text-align:center; transition:all .3s;}
+.visual-wrap .quick-list li a:hover,
+.visual-wrap .quick-list li a:active,
+.visual-wrap .quick-list li a:focus {transform:translateY(-5px);}
+.visual-wrap .quick-list li a::before {content:''; display:block; width:30px; height:30px; margin-bottom:3px; background-repeat:no-repeat; background-position:center; background-size:contain;}
+.visual-wrap .quick-list li:nth-child(1) a::before {background-image:url(../images/main/ico_quick01.svg);}
+.visual-wrap .quick-list li:nth-child(2) a::before {background-image:url(../images/main/ico_quick02.svg);}
+.visual-wrap .quick-list li:nth-child(3) a::before {background-image:url(../images/main/ico_quick03.svg);}
+
+/** 자주 찾는 메뉴 **/ 
+.often-wrap {width:100%; margin-bottom:40px;}
+.often-wrap .often-list {display:flex; justify-content:center; padding:15px; background:#fff; box-shadow:0 3px 6px 0 rgba(0,31,72,.2);}
+.often-wrap .often-list li {position:relative;}
+.often-wrap .often-list li + li {margin-left:100px;}
+.often-wrap .often-list li + li::before {content:''; position:absolute; top:calc(50% - 15px); left:-50px; width:1px; height:30px; background:#ababab; transform:rotate(25deg);}
+.often-wrap .often-list li a {display:block; text-align:center;}
+.often-wrap .often-list li a::before {content:''; display:block; width:55px; height:55px; margin:0 auto; background-repeat:no-repeat; background-position:center; background-size:contain; transition:all .3s;}
+.often-wrap .often-list li a:hover::before,
+.often-wrap .often-list li a:active::before,
+.often-wrap .often-list li a:focus::before {transform:translateY(-5px);}
+.often-wrap .often-list li:nth-child(1) a::before {background-image:url(../images/main/ico_often01.svg);}
+.often-wrap .often-list li:nth-child(2) a::before {background-image:url(../images/main/ico_often02.svg);}
+.often-wrap .often-list li:nth-child(3) a::before {background-image:url(../images/main/ico_often03.svg);}
+
+/** 낚시전문 교육 프로그램 **/ 
+.edu-wrap {width:430px;}
+.edu-wrap .tit-wrap {position:relative;}
+.edu-wrap .tit-wrap .pc-hide {display:none;}
+.edu-wrap .edu-control {position:absolute; top:50%; right:0; transform:translateY(-50%);}
+.edu-wrap .edu-slide {margin:-6px;}
+.edu-wrap .edu-slide .swiper-slide {padding:6px;}
+.edu-wrap .edu-item {display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:240px; padding:20px; background:#fff; box-shadow:0 3px 6px 0 rgba(0,31,72,.2); text-align:center; transition:all .3s;}
+.edu-wrap .edu-item .tit {overflow:hidden; width:100%; font-weight:500; font-size:18px; text-overflow:ellipsis; white-space:nowrap;}
+.edu-wrap .edu-item .loca {overflow:hidden; width:100%; margin-bottom:10px; font-weight:300; font-size:14px; text-overflow:ellipsis; white-space:nowrap;}
+.edu-wrap .edu-item .info-list {margin-bottom:20px; text-align:left;}
+.edu-wrap .edu-item .info-list li strong {display:inline-block; position:relative; width:100px; padding-left:24px; font-weight:400;}
+.edu-wrap .edu-item .info-list li strong::before {content:''; position:absolute; top:50%; left:0; width:19px; height:19px; background-repeat:no-repeat; background-position:center; transform:translateY(-50%);}
+.edu-wrap .edu-item .info-list li .day::before {background-image:url(../images/main/ico_edu01.svg);}
+.edu-wrap .edu-item .info-list li .num::before {background-image:url(../images/main/ico_edu02.svg);}
+.edu-wrap .edu-item .state {width:200px; height:35px; border-radius:20px; background:#004098; line-height:35px; color:#fff;}
+.edu-wrap .edu-item + p {margin-top:5px; font-weight:300; text-align:center;}
+
+/** 알림마당 **/ 
+.noti-wrap {width:240px;}
+.noti-wrap .noti-cont {display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; height:240px; background:#fff; box-shadow:0 3px 6px 0 rgba(0,31,72,.2); transition:all .3s;}
+.noti-wrap .noti-cont:hover,
+.noti-wrap .noti-cont:active,
+.noti-wrap .noti-cont:focus {transform:translateY(-5px);}
+.noti-wrap .noti-cont::before {content:''; display:block; width:101px; height:118px; margin-bottom:10px; background:url(../images/main/obj_noti.png) no-repeat center / contain;}
+.noti-wrap .noti-cont strong {margin-bottom:5px; text-align:center;}
+.noti-wrap .noti-cont strong span {display:block; font-weight:800; line-height:1; color:#dc2829;}
+
+/** 소식 탭 **/ 
+.section-02 {position:relative; padding:90px 0;}
+.section-02::after {content:''; position:absolute; bottom:0; left:0; z-index:-1; width:100%; height:453px; background:url(../images/main/bg_main.png) no-repeat bottom / cover;}
+.section-02 .inner {display:flex; flex-wrap:wrap; justify-content:space-between;}
+
+.news-wrap {width:calc(100% - 480px); height:315px; margin-bottom:90px;}
+.news-wrap .tab-menu {display:flex; align-items:center; position:relative; height:40px; border-bottom:1px solid #ababab;}
+.news-wrap .tab-menu > li + li::before {content:''; display:inline-block; width:1px; height:15px; margin:0 15px; background:#ababab; transform:rotate(25deg);}
+.news-wrap .tab-menu > li .tab-tit {display:inline-block; font-weight:300; font-size:20px; line-height:1.2; color:#ababab;}
+.news-wrap .tab-menu > li .tab-tit:hover,
+.news-wrap .tab-menu > li .tab-tit:active,
+.news-wrap .tab-menu > li .tab-tit:focus {color:#333;}
+.news-wrap .tab-menu > li.active .tab-tit {font-weight:500; color:#004098;}
+.news-wrap .tab-cont {display:none; position:absolute; top:40px; left:0; width:100%;}
+.news-wrap .tab-cont.active {display:block;}
+.news-wrap .tab-cont ul li a {display:flex; align-items:center; position:relative; padding:10px;}
+.news-wrap .tab-cont ul li a .tit {display:block; flex:1; overflow:hidden; position:relative; padding-left:10px; font-weight:400; text-overflow:ellipsis; white-space:nowrap;}
+.news-wrap .tab-cont ul li a > .tit::before {content:'·'; position:absolute; top:0; left:0;}
+.news-wrap .tab-cont ul li a:hover .tit,
+.news-wrap .tab-cont ul li a:active .tit,
+.news-wrap .tab-cont ul li a:focus .tit {text-decoration:underline;}
+.news-wrap .tab-cont ul li a .date {width:90px; font-weight:300; color:#7d7d7d; text-align:right;}
+.news-wrap .tab-cont ul li.top {margin-bottom:10px; border-bottom:1px solid #dbdbdb;}
+.news-wrap .tab-cont ul li.top a {justify-content:space-between; padding:30px 20px;}
+.news-wrap .tab-cont ul li.top a .date-wrap {display:flex; justify-content:flex-end; flex-direction:column-reverse; color:#004098; text-align:center;}
+.news-wrap .tab-cont ul li.top a .date-wrap span {font-weight:500; font-size:48px; line-height:1;}
+.news-wrap .tab-cont ul li.top a .txt-wrap {width:calc(100% - 80px);}
+.news-wrap .tab-cont ul li.top a .txt-wrap .tit {margin-bottom:10px; padding-left:0; font-weight:500; font-size:18px;}
+.news-wrap .tab-cont ul li.top a .txt-wrap .more {font-weight:300; color:#7d7d7d;}
+.news-wrap .btn-more {position:absolute; top:-30px; right:0;}
+
+/** 낚시의 품격 **/ 
+.section-02 .tit-wrap {height:40px; border-bottom:1px solid #ababab;}
+.section-02 .tit-wrap .tit {line-height:40px;}
+
+.fishing-wrap {width:430px; margin-bottom:90px;}
+.fishing-wrap .tit-wrap {position:relative;}
+.fishing-wrap .fishing-control {position:absolute; bottom:5px; right:0;}
+.fishing-wrap .fishing-item {display:block;}
+.fishing-wrap .fishing-item .cont-img {width:100%; height:245px; margin-bottom:10px;}
+.fishing-wrap .fishing-item .cont-img img {display:block; width:100%; height:100%;}
+.fishing-wrap .fishing-item .cont-tit {display:flex;}
+.fishing-wrap .fishing-item .cont-tit .tit {display:block; flex:1; overflow:hidden; font-weight:400; text-overflow:ellipsis; white-space:nowrap;}
+.fishing-wrap .fishing-item:hover .cont-tit .tit,
+.fishing-wrap .fishing-item:active .cont-tit .tit,
+.fishing-wrap .fishing-item:focus .cont-tit .tit {text-decoration:underline;}
+.fishing-wrap .fishing-item .cont-tit .date {width:90px; font-weight:300; color:#7d7d7d; text-align:right;}
+
+/** 해상 정보 **/ 
+.info-wrap {width:400px;}
+.info-wrap .info-list {display:flex; flex-wrap:wrap; margin-top:-40px;}
+.info-wrap .info-list li {width:33.333%; padding-top:40px;}
+.info-wrap .info-list li a {display:block; text-align:center;}
+.info-wrap .info-list li a::before {content:''; display:block; width:60px; height:60px; margin:0 auto 10px; background-repeat:no-repeat; background-position:center; transition:all .3s;}
+.info-wrap .info-list li a:hover::before,
+.info-wrap .info-list li a:active::before,
+.info-wrap .info-list li a:focus::before {transform:translateY(-5px);}
+.info-wrap .info-list li:nth-child(1) a::before {background-image:url(../images/main/ico_info01.svg);}
+.info-wrap .info-list li:nth-child(2) a::before {background-image:url(../images/main/ico_info02.svg);}
+.info-wrap .info-list li:nth-child(3) a::before {background-image:url(../images/main/ico_info03.svg);}
+.info-wrap .info-list li:nth-child(4) a::before {background-image:url(../images/main/ico_info04.svg);}
+.info-wrap .info-list li:nth-child(5) a::before {background-image:url(../images/main/ico_info05.svg);}
+.info-wrap .info-list li:nth-child(6) a::before {background-image:url(../images/main/ico_info06.svg);}
+
+/** 낚시 캠페인 **/ 
+.campaign-wrap {width:400px;}
+.campaign-wrap .tit-wrap {position:relative;}
+.campaign-wrap .tit-wrap .btn-more {position:absolute; top:calc(50% - 9.5px); right:0;}
+.campaign-wrap .campaign-cont {display:block; max-width:400px; width:100%; margin:0 auto;}
+.campaign-wrap .campaign-cont .cont-img {margin-bottom:10px;}
+.campaign-wrap .campaign-cont .cont-img img {display:block; width:100%; height:100%;}
+.campaign-wrap .campaign-cont .cont-tit {display:flex;}
+.campaign-wrap .campaign-cont .cont-tit .tit {display:block; flex:1; overflow:hidden; font-weight:400; text-overflow:ellipsis; white-space:nowrap;}
+.campaign-wrap .campaign-cont:hover .cont-tit .tit,
+.campaign-wrap .campaign-cont:active .cont-tit .tit,
+.campaign-wrap .campaign-cont:focus .cont-tit .tit {text-decoration:underline;}
+.campaign-wrap .campaign-cont .cont-tit .date {width:90px; font-weight:300; color:#7d7d7d; text-align:right;}
+
+/** 교육문의 **/ 
+.inquiry-wrap {position:relative; width:calc(100% - 900px);}
+.inquiry-wrap::after {content:''; position:absolute; bottom:0; right:0; width:105px; height:132px; background:url(../images/main/character.svg) no-repeat center / contain; animation:bounce .7s ease infinite alternate;}
+.inquiry-wrap .tel {margin-bottom:10px; font-weight:500; font-size:46px; color:#004098;}
+.inquiry-wrap .tel::before {content:''; display:inline-block; width:32px; height:32px; margin-right:10px; background:url(../images/main/ico_phone.svg) no-repeat center / cover;}
+.inquiry-wrap .info-list li span {display:inline-block; position:relative; margin-right:40px;}
+.inquiry-wrap .info-list li span::after {content:''; position:absolute; top:50%; right:-20px; width:1px; height:12px; background:#707070; transform:translateY(-50%);}
+
+@keyframes bounce {
+    0% {transform:translateY(0);}
+    100% {transform:translateY(5px);}
+}
+
+/** 배너모음 **/ 
+.section-03 {padding:20px 0;}
+.banner-wrap {position:relative; padding-left:100px;}
+.banner-wrap .banner-control {position:absolute; top:50%; left:0; transform:translateY(-50%);}
+.banner-wrap .banner-control [class*='btn-'] {width:30px; height:30px;}
+.banner-wrap .banner-slide::after {content:none; position:absolute; top:0; right:-1px; z-index:1; width:50px; height:100%; background:linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 100%);}
+.banner-wrap .banner-slide .swiper-slide {width:248px;}
+.banner-wrap .banner-item img {display:block; width:100%; height:100%;}
+
+/** 상단 이동 버튼 **/
+#top-btn {display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; position:fixed; bottom:80px; right:150px; z-index:90; width:80px; height:80px; border-radius:50%; background:#004098; box-shadow:0 3px 13px 0 rgba(12,68,113,.25); font-size:18px; color:#fff; transform:translateY(calc(80px + 60px)); transition:all .3s;}
+#top-btn::before {content:''; display:block; width:15px; height:15px; border-top:3px solid #fff; border-right:3px solid #fff; transform:rotate(315deg);}
+#top-btn.on {opacity:1; transform:translateY(0);}
+
+
+/** 1800px 시작 **/
+@media screen and (max-width:1650px) {
+    /** 상단 이동 버튼 **/
+    #top-btn {bottom:20px; right:20px;}
+}
+/** 1650px 끝 **/
+
+/** 1400px 시작 **/
+@media screen and (max-width:1400px) {
+    /** 비주얼 슬라이드 **/ 
+    .section-01 .r-con {width:700px; padding:20px 0 20px 30px;}
+    .section-01 .r-con::before {width:calc(100vw - (500px + ((100vw - 1200px) / 2)));}
+    .visual-wrap {width:calc(100vw - (700px + ((100vw - 1200px) / 2)));}
+
+    /** 낚시전문 교육 프로그램 **/ 
+    .edu-wrap {width:calc(100% - 270px);}
+}
+/** 1400px 끝 **/
+
+/** 1250px 시작 **/
+@media screen and (max-width:1250px) {
+    /** 비주얼 슬라이드 **/ 
+    .section-01 {background:#f2f6fb;}
+    .section-01 .inner {flex-direction:column;}
+    .section-01 .l-con {flex:1 0 auto; margin:0 -20px;}
+    .section-01 .r-con {width:100%; padding:20px 0;}
+    .section-01 .r-con::before {content:none;}
+
+    .visual-wrap {position:static; width:100%;}
+    .visual-wrap .visual-slide {height:400px;} 
+
+    /** 소식 탭 **/ 
+    .section-02 {padding:40px 0;} 
+    .news-wrap {width:calc(100% - 460px); margin-bottom:40px;}
+
+    /** 낚시의 품격 **/ 
+    .fishing-wrap {margin-bottom:40px;}
+
+    /** 해상 정보 **/ 
+    .info-wrap {width:calc((100% - 460px) / 2);}
+
+    /** 교육문의 **/ 
+    .inquiry-wrap {width:calc((100% - 460px) / 2);}
+    .inquiry-wrap .tel {font-size:36px;}
+    .inquiry-wrap .tel::before {width:28px; height:28px;}
+
+    /** 배너모음 **/ 
+    .banner-wrap .banner-slide::after {content:'';}
+}
+/** 1250px 끝 **/
+
+/** 1024px 시작 **/
+@media screen and (max-width:1024px) {
+    /** 소식 탭 **/ 
+    .news-wrap {width:100%;}
+
+    /** 해상 정보 **/ 
+    .info-wrap {width:calc(100% - 460px);}
+
+    /** 낚시 캠페인 **/ 
+    .campaign-wrap {width:430px;}
+
+    /** 교육문의 **/ 
+    .inquiry-wrap {width:calc(100% - 460px);}
+}
+/** 1024px 끝 **/
+
+/** 800px 시작 **/
+@media screen and (max-width:800px) {
+    /** 낚시의 품격 **/ 
+    .fishing-wrap {width:100%;}
+    .fishing-wrap .fishing-item {max-width:450px; width:100%; margin:0 auto;}
+    .fishing-wrap .fishing-item .cont-img {height:auto;}
+
+    /** 해상 정보 **/ 
+    .info-wrap {width:100%; margin-bottom:40px;}
+
+    /** 낚시 캠페인 **/ 
+    .campaign-wrap {width:100%; margin-bottom:40px;}
+
+    /** 교육문의 **/ 
+    .inquiry-wrap {width:100%;}
+    .inquiry-wrap::after {width:88px; height:101px;}
+}
+/** 800px 끝 **/
+
+/** 767px 시작 **/
+@media screen and (max-width:767px) {
+    /** 타이틀 공통 **/
+    .tit-wrap .tit {font-size:18px;}
+
+    /** 슬라이드 공통 **/
+    .control [class*='btn-'] {width:30px; height:30px;}
+
+    /** 비주얼 슬라이드 **/  
+    .section-01 .inner {flex-direction:column-reverse;}
+    .section-01 .l-con {padding:20px 0;}
+    .visual-wrap .visual-slide {height:auto;}
+    .visual-wrap .visual-slide .swiper-wrapper {display:none;}
+    .visual-wrap .visual-control {display:none;}
+    .visual-wrap .quick-list {justify-content:center; position:static; padding:6px 0;}
+
+    /** 자주 찾는 메뉴 **/ 
+    .often-wrap .often-list li + li {margin-left:30px;}
+    .often-wrap .often-list li + li::before {left:-15px; height:15px;}
+    .often-wrap .often-list li a::before {width:40px; height:40px;}
+
+    /** 낚시전문 교육 프로그램 **/ 
+    .edu-wrap {width:100%; margin-bottom:40px;}
+    .edu-wrap .edu-item {height:auto;}
+    .edu-wrap .edu-item .tit {font-size:16px;}
+
+    /** 알림마당 **/ 
+    .noti-wrap {width:100%;} 
+    .noti-wrap .noti-cont {padding:20px; height:auto;}
+
+    /** 소식 탭 **/ 
+    .news-wrap {height:227px;}
+    .news-wrap .tab-menu > li + li::before {height:12px; margin:0 8px;}
+    .news-wrap .tab-menu > li .tab-tit {font-size:14px;}
+    .news-wrap .tab-menu > li.active .tab-tit {font-size:18px;}
+    .news-wrap .tab-cont ul li a {padding:5px 0;}
+    .news-wrap .tab-cont ul li.top a {padding:15px;}
+    .news-wrap .tab-cont ul li.top a .date-wrap span {font-size:32px;}
+    .news-wrap .tab-cont ul li.top a .txt-wrap {width:calc(100% - 60px);} 
+    .news-wrap .tab-cont ul li.top a .txt-wrap .tit {margin-bottom:5px; font-size:14px;}
+
+    /** 배너모음 **/ 
+    .section-03 {padding:15px 0;}
+    .banner-wrap {padding-left:0;}
+    .banner-wrap .banner-control {justify-content:flex-end; position:static; margin-bottom:10px; transform:translateY(0);}
+    .banner-wrap .banner-control .btn-prev {margin-right:auto;}
+    .banner-wrap .banner-slide .swiper-slide {width:200px;}
+
+    /** 상단 이동 버튼 **/
+    #top-btn {width:60px; height:60px; font-size:14px; transform:translateY(calc(60px + 60px));}
+    #top-btn::before {width:10px; height:10px; border-width:2px;}
+}
+/** 767px 끝 **/
+
+/** 360px 시작 **/
+@media screen and (max-width:360px) {
+    /** 비주얼 슬라이드 **/  
+    .visual-wrap .quick-list li a {width:75px; height:75px; font-size:13px;}
+    .visual-wrap .quick-list li a::before {width:20px; height:20px;}
+
+     /** 자주 찾는 메뉴 **/ 
+     .often-wrap .often-list li {padding:0 8px;}
+     .often-wrap .often-list li + li {margin-left:0;} 
+     .often-wrap .often-list li + li::before {left:0;} 
+     .often-wrap .often-list li a {font-size:13px;}
+
+     /** 낚시전문 교육 프로그램 **/ 
+     .edu-wrap .tit-wrap .pc-hide {display:block;}
+     .edu-wrap .edu-control {top:auto; bottom:0; transform:translateY(0);}
+
+     /** 소식 탭 **/ 
+     .news-wrap .tab-menu > li + li::before {margin:0 5px;}
+     .news-wrap .tab-menu > li.active .tab-tit {font-size:14px;}
+
+     /** 교육문의 **/ 
+    .inquiry-wrap::after {content:none;}
+}
+/** 360px 끝 **/
