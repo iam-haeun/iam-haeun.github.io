@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="그룹_73" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="178px" height="125px" viewBox="0 0 178 125" style="enable-background:new 0 0 178 125;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F4D05A;}
+	.st1{clip-path:url(#SVGID_00000147220607661237282480000011324077855770341816_);}
+	.st2{fill:none;stroke:#030304;stroke-miterlimit:10;}
+</style>
+<rect id="사각형_14" y="74.8" class="st0" width="178" height="50.2"/>
+<g id="그룹_72">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="178" height="125"/>
+		</defs>
+		<clipPath id="SVGID_00000026845853130358458370000004087738097713847942_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="그룹_71" style="clip-path:url(#SVGID_00000026845853130358458370000004087738097713847942_);">
+			<path id="패스_1" class="st0" d="M126.6,83l-20.2-32.2c12.3-9.8,14.4-27.7,4.5-40S83.3-3.6,70.9,6.2s-14.4,27.7-4.5,40
+				c1.2,1.5,2.6,2.9,4.1,4.1L51,79.6L126.6,83z M88.7,12.6c8.8,0,15.9,7.1,15.9,15.9s-7.1,15.9-15.9,15.9c-8.8,0-15.9-7.1-15.9-15.9
+				C72.8,19.7,79.9,12.6,88.7,12.6"/>
+			<rect id="사각형_15" y="74.8" class="st0" width="178" height="21.6"/>
+			<line id="선_12" class="st2" x1="0.2" y1="97.1" x2="177.6" y2="97.1"/>
+			<line id="선_13" class="st2" x1="0.2" y1="75.2" x2="177.6" y2="75.2"/>
+			<path id="패스_2" class="st2" d="M53.9,74.6l16.5-24.2c0,0-16.9-14.7-8-32.1"/>
+			<path id="패스_3" class="st2" d="M104.7,28.5c0,8.9-7.2,16.1-16.1,16.1s-16.1-7.2-16.1-16.1s7.2-16.1,16.1-16.1l0,0
+				C97.5,12.4,104.7,19.6,104.7,28.5z"/>
+		</g>
+	</g>
+</g>
+</svg>
