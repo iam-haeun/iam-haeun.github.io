@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1574ea;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="17" cy="17" r="17"/>
+  <path id="Facebook" class="cls-2" d="m14.09,10.71v3.02h-2.21v3.69h2.21v10.11h4.54v-10.12h3.05s.28-1.77.43-3.7h-3.45v-2.53c0-.37.49-.88.99-.88h2.47v-3.84h-3.36c-4.78,0-4.66,3.7-4.66,4.25Z"/>
+</svg>
