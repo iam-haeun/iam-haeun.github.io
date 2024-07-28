@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000142176338378430586370000000189108630134906255_);}
+	.st2{fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="7.25" y1="21.44" x2="20.95" y2="21.44">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path class="st0" d="M20.95,21.44c0,3.76-3.07,6.8-6.85,6.8s-6.85-3.05-6.85-6.8c0-3.76,3.07-6.8,6.85-6.8S20.95,17.69,20.95,21.44z
+	"/>
+<linearGradient id="SVGID_00000109723933759417841490000002334901694110616758_" gradientUnits="userSpaceOnUse" x1="1.5" y1="38.76" x2="26.7" y2="38.76">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<path style="fill:url(#SVGID_00000109723933759417841490000002334901694110616758_);" d="M24.02,36.33
+	c-2.3-2.93-5.89-4.81-9.92-4.81c-6.96,0-12.6,5.6-12.6,12.51V46h25.2v-1.97C26.7,41.12,25.7,38.45,24.02,36.33z"/>
+<g>
+	<path class="st2" d="M36.82,4c-6.46,0-11.68,5.19-11.68,11.6c0,2.49,0.79,4.79,2.13,6.67l-1.55,5.75l6.55-1.74
+		c1.4,0.59,2.94,0.91,4.56,0.91c6.46,0,11.68-5.19,11.68-11.59C48.5,9.19,43.27,4,36.82,4z"/>
+</g>
+<g>
+	<g>
+		<path id="SVGID_00000161600792300803789570000012064030800230468748_" class="st2" d="M36.82,4c-6.46,0-11.68,5.19-11.68,11.6
+			c0,2.49,0.79,4.79,2.13,6.67l-1.55,5.75l6.55-1.74c1.4,0.59,2.94,0.91,4.56,0.91c6.46,0,11.68-5.19,11.68-11.59
+			C48.5,9.19,43.27,4,36.82,4z"/>
+	</g>
+</g>
+<g>
+	<ellipse class="st2" cx="33.57" cy="15.95" rx="0.69" ry="0.68"/>
+	<ellipse class="st2" cx="37" cy="15.95" rx="0.69" ry="0.68"/>
+	<ellipse class="st2" cx="40.42" cy="15.95" rx="0.69" ry="0.68"/>
+</g>
+</svg>
