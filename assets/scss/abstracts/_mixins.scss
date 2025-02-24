@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// Unit conversion : px → rem
+@function rem($size) {
+    $return-value: calc($size / 10);
+        @return #{$return-value}rem;
+}
+
+@mixin blind {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+@mixin font-face($font-family, $weight, $name) {
+    @font-face {
+        font-family: '#{$font-family}';
+        font-weight: #{$weight};
+        font-style: normal;
+        src: url('#{$font-path}#{$name}.woff2') format('woff2'),
+             url('#{$font-path}#{$name}.woff') format('woff');
+    }
+}

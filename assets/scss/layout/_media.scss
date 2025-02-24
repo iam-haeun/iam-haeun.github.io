@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* media */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: rem(60);
+        .logo {
+            width: rem(116);
+            height: rem(24);
+        }
+        .local-nav {
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            top: rem(60);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 90;
+            background: rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            ul {
+                flex-direction: column;
+                align-items: center;
+                padding: rem(30) rem(20);
+                background: var(--color-white);
+                li {
+                    a {
+                        color: var(--font-color);
+                    }
+                }
+            }
+        }
+        .menu-btn {
+            display: block;
+        }
+        &.open {
+            .local-nav {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .title-box {
+        margin-bottom: rem(40);
+        h2 {
+            font-size: clamp(rem(24), 3.2vw, rem(32));
+        }
+    }
+
+    .top-btn {
+        width: rem(40);
+        height: rem(40);
+        background-size: rem(20);
+    }
+
+    .sec-about {
+        height: rem(650);
+        p {
+            padding-top: rem(110);
+            font-size: clamp(rem(18), 2.4vw ,rem(24));
+        }
+        .txt-box {
+            .txt {
+                height: rem(87);
+                margin-bottom: rem(10);
+                img {
+                    width: rem(475) !important;
+                }
+            }
+        }
+    }
+
+    .sec-work {
+        padding: rem(100) 0 rem(304);
+        &::after {
+            width: rem(336);
+            height: rem(242);
+        }
+        > .inner {
+            max-width: 840px;
+        }
+        .title-box {
+            h2::before {
+                width: rem(100);
+                height: rem(100);
+                margin-bottom: rem(10);
+            }
+        }
+        .work-list {
+            > li {
+                width: calc((100% - 2rem) / 2);
+                .img-box {
+                    height: rem(250);
+                }
+                .txt-box {
+                    padding: rem(20);
+                    .badge {
+                        padding: rem(3) rem(7);
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-contact {
+        .title-box {
+            h2::before {
+                width: rem(40);
+                height: rem(31);
+            }
+        }
+        .card-list {
+            > li {
+                padding: rem(50) rem(20);
+                .txt-box {
+                    &::after {
+                        width: rem(143);
+                        height: rem(159);
+                        margin: rem(30) auto;
+                    }
+                    p {
+                        margin-top: rem(10);
+                    }
+                }
+                .info-box {
+                    flex-direction: column;
+                    align-content: center;
+                    gap: rem(5);
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        > .inner {
+            max-width: 540px !important;
+        }
+    }
+
+    .sec-about {
+        p {
+            padding-left: rem(20);
+            text-align: left;
+        }
+        .txt-box {
+            .txt {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .sec-work {
+        padding: rem(60) 0;
+        background-image: none;
+        &::after {
+            display: none;
+        }
+        .work-list {
+            gap: rem(25);
+            > li {
+                width: 100%;
+                .img-box {
+                    .btn-wrap {
+                        top: rem(15);
+                        right: rem(15);
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-contact {
+        padding: rem(60) 0;
+        .title-box {
+            h2::before {
+                display: block;
+                margin: 0 auto rem(10);
+            }
+        }
+        .card-list {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .sec-about {
+        p {
+            padding-top: rem(180);
+        }
+        .txt-box {
+            .txt {
+                height: 16.89320388349515vw;
+            }
+        }
+    }
+}

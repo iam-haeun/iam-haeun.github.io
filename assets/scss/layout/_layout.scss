@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* layout */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: rem(70);
+    padding: 0 rem(20);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s;
+    .logo {
+        width: rem(163);
+        height: rem(34);
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/common/logo_w.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    .local-nav {
+        ul {
+            display: flex;
+            gap: 30px;
+            li {
+                a {
+                    padding: rem(5) rem(10);
+                    font-weight: bold;
+                    font-size: clamp(14px, 1.465vw, rem(16));
+                    font-family: var(--font-family-en);
+                    color: var(--color-white);
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+    .menu-btn {
+        display: none;
+        width: rem(30);
+        height: rem(30);
+        background-image: url(../img/common/ico_menu_w.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &.on,
+    &.open {
+        border-color: rgba(0, 0, 0, 0.2);
+        background: var(--color-white);
+        .logo {
+            a {
+                background-image: url(../img/common/logo_p.svg);
+            }
+        }
+        .local-nav {
+            ul {
+                li { 
+                    a {
+                        color: var(--font-color);
+
+                    }
+                    &:hover {
+                        a {
+                            color: var(--color-point3);
+                        }
+                    }
+                }
+            }
+        }
+        .menu-btn {
+            background-image: url(../img/common/ico_menu_b.svg);
+        }
+    }
+}
+
+.footer {
+    padding: rem(40) rem(20);
+    background: var(--color-black);
+    p {
+        font-size: clamp(13px, 1.465vw, rem(16));
+        line-height: 2;
+        color: var(--color-gray-300);
+        text-align: center;
+    }
+}
