@@ -7,4 +7,4 @@
 - URL: https://iam-haeun.github.io
 
 ## 🔍 Overview
-![Image](https://github.com/user-attachments/assets/202366fd-8549-4049-b7a8-09438c02665a)
+![Image](https://github.com/user-attachments/assets/a1547ed5-3db6-427d-ae37-bc36e5f0c88d)
