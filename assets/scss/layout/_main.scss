@@ -104,7 +104,8 @@ section {
 .sec-work {
     position: relative;
     padding: rem(100) 0 rem(430);
-    background: var(--color-background) url(../img/main/work_bg.png) no-repeat center bottom / contain;
+    background: var(--color-background) url(../img/main/work_bg.png?v=2) no-repeat center bottom / contain;
+    background-attachment: fixed;
     &::after {
         content: '';
         position: absolute;
@@ -138,22 +139,51 @@ section {
             background: var(--color-white);
             box-shadow: $box-shadow;
             .img-box {
+                overflow: hidden;
                 position: relative;
                 height: rem(320);
+                &::after {
+                    content: '';
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.2);
+                    transition: all 0.3s;
+                }
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    transition: all 0.3s;
                 }
                 .btn-wrap {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     gap: rem(5);
+                    opacity: 0;
                     position: absolute;
-                    top: rem(20);
-                    right: rem(20);
+                    top: 55%;
+                    left: 50%;
+                    z-index: 1;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.3s;
                 }
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                    img {
+                        transform: scale(1.1);
+                    }
+                    .btn-wrap {
+                        opacity: 1;
+                        top: 50%;
+                    }
+                } 
             }
             .txt-box {
                 padding: rem(30) rem(20);

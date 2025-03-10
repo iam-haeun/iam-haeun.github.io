@@ -450,7 +450,8 @@ section > .inner {
 .sec-work {
   position: relative;
   padding: 10rem 0 43rem;
-  background: var(--color-background) url(../img/main/work_bg.png) no-repeat center bottom/contain;
+  background: var(--color-background) url(../img/main/work_bg.png?v=2) no-repeat center bottom/contain;
+  background-attachment: fixed;
 }
 .sec-work::after {
   content: "";
@@ -485,23 +486,50 @@ section > .inner {
   box-shadow: 0 4px 16px 0px rgba(0, 0, 0, 0.04);
 }
 .sec-work .work-list > li .img-box {
+  overflow: hidden;
   position: relative;
   height: 32rem;
+}
+.sec-work .work-list > li .img-box::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 }
 .sec-work .work-list > li .img-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.3s;
 }
 .sec-work .work-list > li .img-box .btn-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
+  opacity: 0;
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 55%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+.sec-work .work-list > li .img-box:hover::after {
+  opacity: 1;
+}
+.sec-work .work-list > li .img-box:hover img {
+  transform: scale(1.1);
+}
+.sec-work .work-list > li .img-box:hover .btn-wrap {
+  opacity: 1;
+  top: 50%;
 }
 .sec-work .work-list > li .txt-box {
   padding: 3rem 2rem;
@@ -745,10 +773,6 @@ section > .inner {
   }
   .sec-work .work-list > li {
     width: 100%;
-  }
-  .sec-work .work-list > li .img-box .btn-wrap {
-    top: 1.5rem;
-    right: 1.5rem;
   }
   .sec-contact {
     padding: 6rem 0;
